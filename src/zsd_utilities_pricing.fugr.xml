@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Creating the Prcing Condition Records</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZSD_UTILITIES_PRICINGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZSD_UTILITIES_PRICING</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZVMAC_SHLP_EXIT</FUNCNAME>
+     <SHORT_TEXT>ZVMAC_SHLP_EXIT</SHORT_TEXT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>SHLP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SHLP_DESCR</TYP>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>CALLCONTROL</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>DDSHF4CTRL</TYP>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>SHLP_TAB</PARAMETER>
+       <TYP>SHLP_DESCT</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RECORD_TAB</PARAMETER>
+       <DBSTRUCT>SEAHLPRES</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>SHLP_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>List of Alternative Elementary Search Helps</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RECORD_TAB</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Search help result structure</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SHLP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Description of Search Help</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALLCONTROL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Control Structure for F4 Process with Search Help Exit</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_MM_PUR_INFO_RECORD_CREATE</FUNCNAME>
+     <SHORT_TEXT>Purchase Info Records creation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_E1EINAM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1EINAM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_E1EINEM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1EINEM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_EXTENSION</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>Z1MM_AUTS</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_E1EINAM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Info Record: General Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_E1EINEM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Purchasing Info Record: Purchasing Organization Data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_EXTENSION</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extending Auto Source field for Purchase Info Records</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_SD_PRICE_COND_UPD</FUNCNAME>
+     <SHORT_TEXT>Create Condition Records</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_KOMG</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KOMG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_KONH</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KONH</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_KONP</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>E1KONP</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_KOMG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Filter segment with separated condition key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_KONH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Data from condition header</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_KONP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Conditions Items</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

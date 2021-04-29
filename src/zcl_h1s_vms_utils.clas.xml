@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Utility Class for VMS</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>CHECK_CONFIG_MATCH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Check FIFIO config Match</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GC_FUNC_ID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Universal Unique Identifier</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GC_GUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Guid</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GC_RECORD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Domain name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GET_BAPI_EXTENSION_VELO</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get extension for Vehicle Multiple BAPI</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GET_PARAMETER_VALUES</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parametrization for  GL , Condition and TAX</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>GO_REF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Utility Class for VMS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_H1S_VMS_UTILS</CLSNAME>
+     <CMPNAME>ON_VEHICLE_ISOLATION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Action execution in Vehicle Isolation</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

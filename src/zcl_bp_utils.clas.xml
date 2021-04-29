@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_BP_UTILS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Business Partner Utilities</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>K</RSTAT>
+    <MSG_ID>ZTECH01</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_BP_UTILS</CLSNAME>
+     <CMPNAME>GET_BPNUM_FROM_SUBCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get business partner from subsidiary code</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_BP_UTILS</CLSNAME>
+     <CMPNAME>GET_SUBCODE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get subsidiary code from business partner</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

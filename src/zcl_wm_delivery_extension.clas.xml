@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Delivery Extension</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>FREE_EXTENSION_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Free Global Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>FREE_HEADER_EXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Free Global Data</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>GET_DELI_EXTENSION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Delivery Extension Method</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>GS_EXTENSION_HEADER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>custom fields in delivery header</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>GT_EXTENSION_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery Extension</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_WM_DELIVERY_EXTENSION</CLSNAME>
+     <CMPNAME>SET_DELI_EXTENSION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set Delivery Extension Method</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

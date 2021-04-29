@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Maintain Objects</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZCA_MAINT_OBJECTS</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_CA_MAINTAIN_OBJECTS</FUNCNAME>
+     <SHORT_TEXT>Maintain Objects</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_OBJECTS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>ZTCA_ZCAD_OBJECTS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UPD</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIWAIT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_OBJECTS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Maintain Objects</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UPD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>(&apos;I&apos; = Insert, &apos;U&apos; = Update)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Use the command `COMMIT AND WAIT`</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

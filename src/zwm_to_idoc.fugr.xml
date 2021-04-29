@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Transfer Order  IDOC For Delivery/Item</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>SAPLZWM_TO_IDOC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>Z_WM_IDOC_INPUT_ZWMTODN</FUNCNAME>
+     <GLOBAL_FLAG>X</GLOBAL_FLAG>
+     <SHORT_TEXT>Transfer Order  IDOC For Delivery/Item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-INPUTMETHD</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-MASS_PROC</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-RESULT</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-APPL_VAR</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-UPDATETASK</DBFIELD>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <DBFIELD>BDWFAP_PAR-CALLTRANS</DBFIELD>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <DBSTRUCT>EDIDC</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <DBSTRUCT>EDIDD</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <DBSTRUCT>BDIDOCSTAT</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <DBSTRUCT>BDWFRETVAR</DBSTRUCT>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <DBSTRUCT>BDI_SER</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>WRONG_FUNCTION_CALLED</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>OTHERS</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>INPUT_METHOD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Method: Background/Foreground processing, etc.</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>MASS_PROCESSING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Mass input (otherwise single input)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WORKFLOW_RESULT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Result of methods for Workflow (Return code)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>APPLICATION_VARIABLE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Application variable</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IN_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Process IDocs using update</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>CALL_TRANSACTION_DONE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Flag: Process with call transaction</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_CONTRL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc control records</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDOC data records</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IDOC_STATUS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc Status Records</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>RETURN_VARIABLES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Result variables with values for Workflow</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>SERIALIZATION_INFO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Serialization objects for one/several IDocs</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>WRONG_FUNCTION_CALLED</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>System cannot process IDocs</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OTHERS</PARAMETER>
+       <KIND>X</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_WM_TO_DN_IDOC_CREATE</FUNCNAME>
+     <SHORT_TEXT>Post Transfer Order  IDOC For Delivery/Item</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_ZTODNHR</PARAMETER>
+       <TYP>ZTODNHR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_ZTODNIT</PARAMETER>
+       <TYP>ZTODNIT_TAB</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_START</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>FLAG</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_BTCH_USER</PARAMETER>
+       <DEFAULT>SY-UNAME</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>XUBNAME</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>EDIDC-DOCNUM</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_ZTODNHR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>TO Header data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ZTODNIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>TO Delivery Items</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Trigger Commit</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_START</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Trigger IDOC Processing</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_BTCH_USER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>User Name in User Master Record</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_IDOCNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>IDoc number</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

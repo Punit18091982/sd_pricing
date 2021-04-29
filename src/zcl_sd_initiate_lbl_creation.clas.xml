@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Singleton - Label creation from Tile or SAP</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>CLEAR_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clear the reference</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>GET_OBJECT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Singleton Object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>GR_SINGLETON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Singleton - Label creation from Tile or SAP</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>GV_ACTION</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>GV_MEDIUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Single-Character Flag</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_SD_INITIATE_LBL_CREATION</CLSNAME>
+     <CMPNAME>SET_MEDIUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set the medium to &apos;F&apos; for Fiori UI</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
